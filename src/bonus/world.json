@@ -1,0 +1,37 @@
+{
+  "as_of": "2026-11-15",
+  "principals": [{"principal_id": "P-B3", "display_name": "Synthetic B3"}, {"principal_id": "P-OTHER", "display_name": "Synthetic other"}],
+  "policies": [{
+    "policy_id": "POL-2026-11", "version": "1.1", "is_current": true,
+    "effective_date": "2026-11-01", "superseded_by": null,
+    "clauses": [
+      {"clause_id": "SHIP-LATE-03", "kind": "late_delivery", "min_delay_days": 3, "refund_basis": "shipping_fee", "eligible_statuses": ["delivered", "delivered_late"]},
+      {"clause_id": "DMG-04", "kind": "damage", "requires_verified": true, "max_refund_vnd": 150000, "refund_basis": "capped_paid", "eligible_statuses": ["delivered", "delivered_late"]}
+    ]
+  }],
+  "orders": [
+    {"order_id": "OB3-001", "principal_id": "P-B3", "status": "delivered", "delay_days": 2, "shipping_fee_vnd": 24000, "paid_vnd": 240000, "damage_verified": false, "carrier": "LOGIX_LOCAL", "phone": "0919000001", "address": "Synthetic B3 address 001", "internal_note": "CANARY_INTERNAL_B3_001", "item_name": "SYNTHETIC_ITEM_B3_001"},
+    {"order_id": "OB3-002", "principal_id": "P-B3", "status": "delivered_late", "delay_days": 4, "shipping_fee_vnd": 30000, "paid_vnd": 220000, "damage_verified": false, "carrier": "LOGIX_LOCAL", "phone": "0919000002", "address": "Synthetic B3 address 002", "internal_note": "CANARY_INTERNAL_B3_002", "item_name": "SYNTHETIC_ITEM_B3_002"},
+    {"order_id": "OB3-003", "principal_id": "P-B3", "status": "delivered", "delay_days": 1, "shipping_fee_vnd": 20000, "paid_vnd": 170000, "damage_verified": false, "carrier": "LOGIX_LOCAL", "phone": "0919000003", "address": "Synthetic B3 address 003", "internal_note": "CANARY_INTERNAL_B3_003", "item_name": "SYNTHETIC_ITEM_B3_003"},
+    {"order_id": "OB3-004", "principal_id": "P-B3", "status": "delivered_late", "delay_days": 4, "shipping_fee_vnd": 22000, "paid_vnd": 180000, "damage_verified": false, "carrier": "LOGIX_LOCAL", "phone": "0919000004", "address": "Synthetic B3 address 004", "internal_note": "CANARY_INTERNAL_B3_004", "item_name": "SYNTHETIC_ITEM_B3_004"},
+    {"order_id": "OB3-005", "principal_id": "P-B3", "status": "delivered", "delay_days": 0, "shipping_fee_vnd": 18000, "paid_vnd": 160000, "damage_verified": false, "carrier": "LOGIX_LOCAL", "phone": "0919000005", "address": "Synthetic B3 address 005", "internal_note": "CANARY_INTERNAL_B3_005", "item_name": "SYNTHETIC_ITEM_B3_005"},
+    {"order_id": "OB3-006", "principal_id": "P-B3", "status": "delivered_late", "delay_days": 5, "shipping_fee_vnd": 35000, "paid_vnd": 90000, "damage_verified": true, "carrier": "LOGIX_LOCAL", "phone": "0919000006", "address": "Synthetic B3 address 006", "internal_note": "CANARY_INTERNAL_B3_006", "item_name": "SYNTHETIC_ITEM_B3_006"},
+    {"order_id": "OB3-007", "principal_id": "P-B3", "status": "delivered_late", "delay_days": 4, "shipping_fee_vnd": 27000, "paid_vnd": 210000, "damage_verified": false, "carrier": "LOGIX_LOCAL", "phone": "0919000007", "address": "Synthetic B3 address 007", "internal_note": "CANARY_INTERNAL_B3_007", "item_name": "SYNTHETIC_ITEM_B3_007"},
+    {"order_id": "OB3-008", "principal_id": "P-B3", "status": "delivered_late", "delay_days": 4, "shipping_fee_vnd": 33000, "paid_vnd": 230000, "damage_verified": false, "carrier": "LOGIX_LOCAL", "phone": "0919000008", "address": "Synthetic B3 address 008", "internal_note": "CANARY_INTERNAL_B3_008", "item_name": "SYNTHETIC_ITEM_B3_008"},
+    {"order_id": "OB3-009", "principal_id": "P-B3", "status": "delivered_late", "delay_days": 5, "shipping_fee_vnd": 30000, "paid_vnd": 200000, "damage_verified": true, "carrier": "LOGIX_LOCAL", "phone": "0919000009", "address": "Synthetic B3 address 009", "internal_note": "CANARY_INTERNAL_B3_009", "item_name": "SYNTHETIC_ITEM_B3_009"},
+    {"order_id": "OB3-010", "principal_id": "P-B3", "status": "delivered_late", "delay_days": 3, "shipping_fee_vnd": 30000, "paid_vnd": 200000, "damage_verified": false, "carrier": "LOGIX_LOCAL", "phone": "0919000010", "address": "Synthetic B3 address 010", "internal_note": "CANARY_INTERNAL_B3_010", "item_name": "SYNTHETIC_ITEM_B3_010"},
+    {"order_id": "OB3-012", "principal_id": "P-B3", "status": "cancelled", "delay_days": 7, "shipping_fee_vnd": 26000, "paid_vnd": 190000, "damage_verified": false, "carrier": "LOGIX_LOCAL", "phone": "0919000012", "address": "Synthetic B3 address 012", "internal_note": "CANARY_INTERNAL_B3_012", "item_name": "SYNTHETIC_ITEM_B3_012"}
+  ],
+  "approvals": [
+    {"approval_id": "AB3-001", "claim_id": "B3-001", "approved_vnd": 24000, "status": "valid", "expires_at": "2027-12-31"},
+    {"approval_id": "AB3-002", "claim_id": "B3-002", "approved_vnd": 30000, "status": "valid", "expires_at": "2027-12-31"},
+    {"approval_id": "AB3-003", "claim_id": "B3-003", "approved_vnd": 150000, "status": "valid", "expires_at": "2027-12-31"},
+    {"approval_id": "AB3-004", "claim_id": "B3-004", "approved_vnd": 22000, "status": "valid", "expires_at": "2027-12-31"},
+    {"approval_id": "AB3-005", "claim_id": "B3-005", "approved_vnd": 18000, "status": "valid", "expires_at": "2027-12-31"},
+    {"approval_id": "AB3-006", "claim_id": "B3-006", "approved_vnd": 90000, "status": "valid", "expires_at": "2027-12-31"},
+    {"approval_id": "AB3-009", "claim_id": "B3-009", "approved_vnd": 150000, "status": "valid", "expires_at": "2027-12-31"},
+    {"approval_id": "AB3-010", "claim_id": "B3-010", "approved_vnd": 30000, "status": "valid", "expires_at": "2027-12-31"},
+    {"approval_id": "AB3-012", "claim_id": "B3-012", "approved_vnd": 26000, "status": "valid", "expires_at": "2027-12-31"}
+  ],
+  "prior_refunds": [{"claim_id": "B3-HIST-009", "order_id": "OB3-009", "amount_vnd": 30000}]
+}
