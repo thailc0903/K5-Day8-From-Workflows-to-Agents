@@ -47,6 +47,8 @@ Run dẫn chứng: `R-workflow-C-001-s11`, `R-workflow-C-014-s55`, `R-swarm-C-00
 
 Quyết định kiến trúc và lý do: xem `report/team/decision_adr.md`. Phiếu nghiên cứu và ablation: xem `report/team/research_card.md`.
 
+Bonus duy nhất **B3**: [bonus_report.md](bonus_report.md), theo khung riêng tối đa 2 trang. `bonus_public.json` và `bonus_adversarial.json` cho swarm_verified đạt pass rate/pass^5=1.0 và variance=0 trên cả hai bộ; `bonus_b3.json` ghi 1/7 can thiệp, sửa 1/4 trial fail public/đối kháng, các safety counts bằng 0, host crash 20/20 và bonus crash 3/3. Sau bổ sung 151 test B3, toàn bộ kiểm thử đạt **496 passed**. Giữ workflow làm shape chính vì cost/success thấp hơn. B3 chưa commit/push; chưa có hidden để xác nhận điều kiện nhận điểm cộng.
+
 ## 5. Khó khăn và cách xử lý
 
 Trong PowerShell, `python --version` báo `The term 'python' is not recognized`. Gọi `src/.venv/Scripts/python.exe --version` trong sandbox ban đầu còn báo không tìm thấy interpreter gốc. Sau khi chạy bằng quyền thực thi được cấp, interpreter có sẵn hoạt động: `Python 3.12.10`; không thay đổi config dự án hoặc cài lại Python.

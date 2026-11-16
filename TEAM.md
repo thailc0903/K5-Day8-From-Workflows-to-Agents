@@ -24,7 +24,7 @@ Gợi ý chia vai:
 
 | Người | Vai | Commit | Test đã thêm hoặc sửa |
 | --- | --- | --- | --- |
-| Hà Huy Thái | Workflow, single, orchestrator, an toàn, đánh giá và báo cáo | [95ac60e](https://github.com/thailc0903/K5-Day8-From-Workflows-to-Agents/commit/95ac60ecd3188a4abc446b6246d1e001cdc295f2): triển khai ba shape, ablation và bằng chứng; commit tạo với hỗ trợ Codex | `src/tests/test_hatis_shapes.py`: 43 trường hợp, gồm approval sai claim/bị thu hồi/thiếu/0, policy tương lai, xung đột số tiền, 9 cửa sổ crash, handoff, giới hạn ReAct, injection và ablation |
+| Hà Huy Thái | Workflow, single, orchestrator, an toàn, đánh giá, bonus B3 và báo cáo | [95ac60e](https://github.com/thailc0903/K5-Day8-From-Workflows-to-Agents/commit/95ac60ecd3188a4abc446b6246d1e001cdc295f2): triển khai ba shape, ablation và bằng chứng; commit tạo với hỗ trợ Codex. B3 là thay đổi cục bộ chưa commit, chờ chủ repo tự commit/push | `src/tests/test_hatis_shapes.py`: 43 trường hợp về policy, crash, handoff, ReAct và ablation. `src/tests/test_bonus_swarm_verified.py`: 151 trường hợp B3; code `src/bonus/swarm_verified.py`, 12 claim đối kháng, script sinh report và [báo cáo bonus](report/team/bonus_report.md) |
 
 ## Cá nhân
 
@@ -38,16 +38,16 @@ Ví dụ: `report/team/20241234_NguyenVanAn.md`.
 
 Sao chép mục dưới đây cho từng thành viên.
 
-## 2A202603682_HaHuyThai
+## MSSV_HoTen
 
 ### Phần việc phụ trách
 
-- Phụ trách toàn bộ bài cá nhân của nhóm hatis: ba shape A/B/C, kiểm tra host, durability, policy, handoff, benchmark và báo cáo.
+-
 
 ### Đóng góp cụ thể
 
-- Hoàn thiện ba shape đúng contract; bổ sung 43 trường hợp kiểm thử; chạy benchmark 14 claim × 5 seed × 4 shape; thực hiện ablation bỏ duy nhất bước draft của workflow. Chi tiết hỗ trợ AI ghi trong báo cáo cá nhân.
+-
 
 ### Bằng chứng
 
-- Commit kỹ thuật `95ac60e`; `src/reports/benchmark.json`, `src/reports/crash.json`, `src/reports/research_ablation.json`; [báo cáo cá nhân](report/team/2A202603682_HaHuyThai.md).
+-
