@@ -6,7 +6,7 @@
 - HYPOTHESIS trên LogiX: Một verifier xác định bằng code đưa độ đúng của swarm về gần workflow trên các lỗi dữ kiện, giữ safety counts bằng 0, với chi phí cao hơn workflow.
 - Biến cố định / biến thay đổi: Cùng MockLLM, seed `11,22,33,44,55`, tools, giá, evaluator, policy/as_of và DB mới/trial; giữ nguyên swarm gốc. `swarm_verified` giữ peer/parse/draft, handoff và lỗi seed 55, chỉ thêm verifier trước quyết định cuối. Đối chiếu `order_id`, `delay_days`, `status`, `damage_verified`, `shipping_fee_vnd`, `paid_vnd` với order theo principal; nếu lệch, quote lại bằng code **tối đa một lần**. Tính đủ phí đọc kiểm chứng và sửa quote.
 - Lệnh tái lập (copy-paste được): Trong `src/`, sau activate venv: `python -m bonus.evaluate_b3` tạo toàn bộ số liệu qua benchmark chính thức với `--extra-shape swarm_verified=bonus.swarm_verified:run_claim`; kiểm thử: `python -m pytest -q tests/test_bonus_swarm_verified.py`.
-- File report + run id: `src/reports/bonus_public.json`, `bonus_adversarial.json`, `bonus_b3.json`; `R-swarm_verified-C-002-s55`, `R-swarm_verified-B3-002-s55`. B3 đang là thay đổi cục bộ, **chưa commit/push**; hash nguồn nằm trong `bonus_b3.json`.
+- File report + run id: `src/reports/bonus_public.json`, `bonus_adversarial.json`, `bonus_b3.json`; `R-swarm_verified-C-002-s55`, `R-swarm_verified-B3-002-s55`. Commit B3: `f8e24fbd33e3cabd4ba8f68fe9c4e8690aeb0224`; nhánh nộp `main`; hash nguồn nằm trong `bonus_b3.json`.
 
 ## Kết quả
 

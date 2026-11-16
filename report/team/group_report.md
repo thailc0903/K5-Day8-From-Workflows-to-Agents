@@ -6,7 +6,7 @@ Tối đa 5 trang ngoài phụ lục. Số liệu lấy từ file trong `src/rep
 
 - Tên nhóm: hatis — bài làm cá nhân, 01 thành viên: Hà Huy Thái, MSSV 2A202603682, lớp L3A.
 - Thành viên: xem `TEAM.md`
-- Commit chốt (trùng `report/team/decision_adr.md`): `95ac60ecd3188a4abc446b6246d1e001cdc295f2` (commit code, test và bằng chứng); nhánh nộp `hatis`.
+- Commit chốt (trùng `report/team/decision_adr.md`): `f8e24fbd33e3cabd4ba8f68fe9c4e8690aeb0224` (commit code, test, bằng chứng và bonus B3); nhánh nộp `main`.
 
 ## 2. Mục tiêu và cách tiếp cận
 
@@ -47,7 +47,7 @@ Run dẫn chứng: `R-workflow-C-001-s11`, `R-workflow-C-014-s55`, `R-swarm-C-00
 
 Quyết định kiến trúc và lý do: xem `report/team/decision_adr.md`. Phiếu nghiên cứu và ablation: xem `report/team/research_card.md`.
 
-Bonus duy nhất **B3**: [bonus_report.md](bonus_report.md), theo khung riêng tối đa 2 trang. `bonus_public.json` và `bonus_adversarial.json` cho swarm_verified đạt pass rate/pass^5=1.0 và variance=0 trên cả hai bộ; `bonus_b3.json` ghi 1/7 can thiệp, sửa 1/4 trial fail public/đối kháng, các safety counts bằng 0, host crash 20/20 và bonus crash 3/3. Sau bổ sung 151 test B3, toàn bộ kiểm thử đạt **496 passed**. Giữ workflow làm shape chính vì cost/success thấp hơn. B3 chưa commit/push; chưa có hidden để xác nhận điều kiện nhận điểm cộng.
+Bonus duy nhất **B3**: [bonus_report.md](bonus_report.md), theo khung riêng tối đa 2 trang. `bonus_public.json` và `bonus_adversarial.json` cho swarm_verified đạt pass rate/pass^5=1.0 và variance=0 trên cả hai bộ; `bonus_b3.json` ghi 1/7 can thiệp, sửa 1/4 trial fail public/đối kháng, các safety counts bằng 0, host crash 20/20 và bonus crash 3/3. Sau bổ sung 151 test B3, toàn bộ kiểm thử đạt **496 passed**. Giữ workflow làm shape chính vì cost/success thấp hơn. Commit B3: `f8e24fb`; chưa có hidden để xác nhận điều kiện nhận điểm cộng.
 
 ## 5. Khó khăn và cách xử lý
 
